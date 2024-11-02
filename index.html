@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatPhotoApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+  
+    <main class="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg">
+      <h1 class="text-3xl font-bold text-center text-teal-600 mb-6">CatPhotoApp</h1>
+      
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-700">Cat Photos</h2>
+        <p class="mt-2 text-gray-600">Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="text-teal-500 underline">cute cats</a> online!</p>
+        <p class="mt-2 text-gray-600">See more <a href="https://freecatphotoapp.com" target="_blank" class="text-teal-500 underline">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com" class="block mt-4">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back." class="rounded-lg shadow-md">
+        </a>
+      </section>
+    
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-700">Cat Lists</h2>
+        <h3 class="text-xl font-semibold mt-4 text-gray-600">Things cats love:</h3>
+        <ul class="list-disc list-inside mt-2 text-gray-600">
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure class="mt-4">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate." class="rounded-lg shadow-md">
+          <figcaption class="text-center text-gray-500 mt-2">Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+      
+        <h3 class="text-xl font-semibold mt-6 text-gray-600">Top 3 things cats hate:</h3>
+        <ol class="list-decimal list-inside mt-2 text-gray-600">
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure class="mt-4">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field." class="rounded-lg shadow-md">
+          <figcaption class="text-center text-gray-500 mt-2">Cats <strong>hate</strong> other cats.</figcaption>  
+        </figure>
+      </section>
+    
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-700">Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo" class="mt-4 space-y-4">
+          
+          <fieldset class="border border-gray-300 p-4 rounded-md">
+            <legend class="text-gray-700 font-semibold">Is your cat an indoor or outdoor cat?</legend>
+            <label class="inline-flex items-center mt-2">
+              <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked class="text-teal-600">
+              <span class="ml-2 text-gray-600">Indoor</span>
+            </label>
+            <label class="inline-flex items-center mt-2">
+              <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" class="text-teal-600">
+              <span class="ml-2 text-gray-600">Outdoor</span>
+            </label>
+          </fieldset>
+        
+          <fieldset class="border border-gray-300 p-4 rounded-md">
+            <legend class="text-gray-700 font-semibold">What's your cat's personality?</legend>
+            <label class="inline-flex items-center mt-2">
+              <input id="loving" type="checkbox" name="personality" value="loving" checked class="text-teal-600">
+              <span class="ml-2 text-gray-600">Loving</span>
+            </label>
+            <label class="inline-flex items-center mt-2">
+              <input id="lazy" type="checkbox" name="personality" value="lazy" class="text-teal-600">
+              <span class="ml-2 text-gray-600">Lazy</span>
+            </label>
+            <label class="inline-flex items-center mt-2">
+              <input id="energetic" type="checkbox" name="personality" value="energetic" class="text-teal-600">
+              <span class="ml-2 text-gray-600">Energetic</span>
+            </label>
+          </fieldset>
+        
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">
+          <button type="submit" class="w-full py-2 px-4 bg-teal-600 text-white rounded-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500">Submit</button>
+        </form>
+      </section>
+    </main>
+  
+    <footer class="text-center mt-8 text-gray-500">
+      <p>No Copyright - <a href="https://www.freecodecamp.org" class="text-teal-500 underline">freeCodeCamp.org</a></p>
+    </footer>
+    
+  </body>
+</html>
